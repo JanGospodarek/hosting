@@ -17,8 +17,8 @@ const Hero = () => {
 
         <div className="mt-4">
           <h1 className="text-2xl">
-            Stórzmy stronę internetową dla
-            <span className="text-primary"> Twojej</span> firmy
+            Razem stwórzmy przyszłość
+            <span className="text-primary"> Twojej</span> firmy w internecie
           </h1>
         </div>
         <a className="btn btn-primary btn-outline mt-16">Dowiedz się więcej</a>
