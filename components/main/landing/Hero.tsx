@@ -2,7 +2,7 @@ import Logo from "../../../public/img/logo.png";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <div className="  h-screen bg-base-200 flex items-center justify-start ">
+    <div className="h-screen  flex flex-col items-start justify-center ">
       <div className="flex flex-col ml-28  ">
         <Image src={Logo} alt="logo" width={600} />
 
@@ -16,6 +16,9 @@ const Hero = () => {
           </a> */}
         </div>
       </div>
+      <button className="btn btn-outline mx-auto mt-28">
+        Dowiedz się więcej
+      </button>
     </div>
   );
 };

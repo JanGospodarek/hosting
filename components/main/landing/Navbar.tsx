@@ -1,13 +1,7 @@
 import Image from "next/image";
-import Logo from "../../public/img/logo.png";
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 px-6 py-4  ">
-      <div className="flex-1">
-        <a className=" cursor-pointer">
-          <Image src={Logo} alt="logo" width={250} />
-        </a>
-      </div>
+    <div className=" bg-base-200 px-6  fixed top-0 right-0 z-10 rounded-bl-xl ">
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
