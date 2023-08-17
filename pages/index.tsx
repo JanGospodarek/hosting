@@ -1,13 +1,11 @@
-import Benefits from "../components/main/Benefits";
-import ExampleProjects from "../components/main/ExampleProjects";
-import Hero from "../components/main/Hero";
-import Navbar from "../components/main/Navbar";
-
+import ExampleProjects from "../components/main/landing/ExampleProjects";
+import Hero from "../components/main/landing/Hero";
+import Imagination from "../components/main/landing/Imagination";
 const IndexPage = () => (
   <>
-    <Navbar />
+    {/* <Navbar /> */}
     <Hero />
-    <Benefits />
+    <Imagination />
     <ExampleProjects />
   </>
 );

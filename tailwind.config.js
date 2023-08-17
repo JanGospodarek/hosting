@@ -5,9 +5,13 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}", // Source files
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
+      },
+    },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: ["light"],
     // darkTheme: "night",
