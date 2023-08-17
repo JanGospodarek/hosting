@@ -1,9 +1,18 @@
 import Logo from "../../../public/img/logo.png";
 import Image from "next/image";
+import Lottie from "lottie-react";
+import HeroAnimation from "../../../public/lottie/hero.json";
 const Hero = () => {
   return (
-    <div className="h-screen  flex flex-col items-start justify-center ">
-      <div className="flex flex-col ml-28  ">
+    <div className="h-screen  flex flex-col items-start justify-center relative">
+      <Lottie
+        animationData={HeroAnimation}
+        loop={true}
+        className="absolute bottom-0 right-0"
+        style={{ width: "800px" }}
+      />
+
+      <div className="flex flex-col  ml-20 mb-40 items-center">
         <Image src={Logo} alt="logo" width={600} />
 
         <div className="mt-4">
@@ -11,14 +20,9 @@ const Hero = () => {
             Stórzmy stronę internetową dla
             <span className="text-primary"> Twojej</span> firmy
           </h1>
-          {/* <a className="btn btn-primary btn-outline" href="#benefits">
-            Dowiedz się więcej
-          </a> */}
         </div>
+        <a className="btn btn-primary btn-outline mt-16">Dowiedz się więcej</a>
       </div>
-      <button className="btn btn-outline mx-auto mt-28">
-        Dowiedz się więcej
-      </button>
     </div>
   );
 };
