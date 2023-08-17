@@ -10,7 +10,6 @@
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
     "react-tsparticles": "^2.12.2",
     "tsparticles-preset-fountain": "^2.12.0"
   },
