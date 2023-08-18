@@ -1,4 +1,4 @@
-import Logo from "../../../public/img/logo.png";
+import Logo from "../../../public/img/logo2.png";
 import Image from "next/image";
 import Lottie from "lottie-react";
 import HeroAnimation from "../../../public/lottie/hero.json";

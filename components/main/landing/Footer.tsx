@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../../public/img/logo.png";
+import Logo from "../../../public/img/logo2.png";
 const Footer = () => {
   return (
     <footer className="footer items-center p-8  text-neutral shadow-2xl rounded-xl mb-4  mt-16">
@@ -7,7 +7,7 @@ const Footer = () => {
         <Image src={Logo} alt="logo" width={150} />
         <p>
           Copyright © 2023 - All right reserved | Kontakt:
-          <b> purecode.kontakt@gmail.com</b>
+          <b> flowbits.kontakt@gmail.com</b>
         </p>
       </div>
       {/* <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
