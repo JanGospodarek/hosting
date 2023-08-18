@@ -1,4 +1,3 @@
-import Image from "next/image";
 const Navbar = () => {
   return (
     <div className=" shadow-xl px-6 bg-base-100  fixed top-0 right-0 z-10 rounded-bl-xl ">
