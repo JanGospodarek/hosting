@@ -4,7 +4,7 @@ import PiggyLottie from "../../../public/lottie/piggy.json";
 import IndividualLottie from "../../../public/lottie/individual.json";
 const Benefits = () => {
   return (
-    <div className="flex flex-col mt-16 mx-36 items-start ">
+    <div className="flex flex-col mt-16 lg:mx-16 xl:mx-36 items-start ">
       <h2 className="text-4xl font-semibold text-center w-full mb-10">
         Co nas charakteryzuje?
       </h2>
@@ -26,7 +26,7 @@ const Benefits = () => {
         title="Indywidualne&nbsp;podejście"
         body="Kazdy klient jest dla nas wyjątkowy" // TODO: zmienić ten opis
         lottieData={IndividualLottie}
-        animationWidth="250px"
+        animationWidth="300px"
       />
     </div>
   );

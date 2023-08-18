@@ -10,7 +10,7 @@ const SingleBenefit = (props: {
   const { title, body, placementClass, lottieData, animationWidth } = props;
   return (
     <div
-      className={`flex  w-1/2  my-4 rounded-xl shadow-2xl text-center p-6 ${
+      className={`flex sm:mx-16 lg:mx-0 lg:w-1/2  my-4 rounded-xl shadow-2xl text-center p-6 h-64 ${
         placementClass ? placementClass : ""
       }`}
     >
@@ -21,7 +21,7 @@ const SingleBenefit = (props: {
       <Lottie
         animationData={lottieData}
         loop={true}
-        style={{ width: animationWidth }}
+        // style={{ width: animationWidth }}
         className="mx-auto"
       />
     </div>

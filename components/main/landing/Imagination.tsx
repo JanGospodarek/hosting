@@ -10,9 +10,7 @@ const Imagination = () => {
     preset: "fountain",
     fullScreen: { enable: false, zIndex: 0 },
   };
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+
   return (
     <div className="h-screen bg-base-300 flex items-center justify-center relative">
       <div className="absolute w-full h-full  ">
@@ -22,7 +20,9 @@ const Imagination = () => {
           className="absolute w-full h-full  "
         />
         <div className="flex flex-col items-center absolute left-0 right-0 mt-64 m-auto z-10">
-          <p className="text-6xl font-semibold">Puść wodzę fantazji</p>
+          <p className="text-6xl font-semibold text-center">
+            Puść wodzę fantazji
+          </p>
           <p className="text-2xl mt-2 text-slate-600">
             A my przeniesiemy ją do internetu
           </p>

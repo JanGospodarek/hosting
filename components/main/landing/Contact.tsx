@@ -2,9 +2,9 @@ import Lottie from "lottie-react";
 import ContactLottie from "../../../public/lottie/contact.json";
 const Contact = () => {
   return (
-    <div className="rounded-lg shadow-xl w-[800px] mx-auto mt-24 p-8">
+    <div className="rounded-lg shadow-xl md:w-3/4 lg:w-[800px] mx-auto mt-24 p-8">
       <div className="flex">
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col w-full md:w-1/2">
           <p className="text-3xl font-semibold">Skontaktuj się z nami</p>
           <p className="text-slate-500">Zamów bezpłatną wycenę</p>
           <input
@@ -28,7 +28,7 @@ const Contact = () => {
           animationData={ContactLottie}
           loop={true}
           style={{ width: "300px" }}
-          className="mx-auto"
+          className=" mx-auto hidden lg:block"
         />
       </div>
 
@@ -39,7 +39,7 @@ const Contact = () => {
         </label>
         <textarea
           className="textarea textarea-bordered h-24"
-          placeholder="Opisz swój projekt"
+          placeholder="Opisz swój projekt, na przykład: masz moze jakąś wizję, czym się zajmuje twoja firma, co chcesz by się znajdowało na stronie"
         ></textarea>
       </div>
 

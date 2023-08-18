@@ -2,7 +2,7 @@ import SingleTechnologie from "./SingleTechnologie";
 
 const Technologies = () => {
   return (
-    <div className="flex mt-24 mx-24 justify-between">
+    <div className="grid sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 mt-24 lg:mx-12 xl:mx-24 justify-center items-center gap-3">
       <SingleTechnologie
         title="Pozycjonowanie"
         body="Dobra pozycja w wynikach wyszukiwania w Google"
