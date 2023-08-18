@@ -27,8 +27,7 @@ const Contact = () => {
         <Lottie
           animationData={ContactLottie}
           loop={true}
-          style={{ width: "300px" }}
-          className=" mx-auto hidden lg:block"
+          className=" mx-auto hidden md:w-[200px] md:block lg:w-[300px]"
         />
       </div>
 

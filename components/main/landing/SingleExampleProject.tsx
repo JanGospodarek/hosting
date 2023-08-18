@@ -1,14 +1,9 @@
 const SingleExampleProject = () => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="Shoes"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">Restauracja</h2>
+    <div className="mockup-phone ">
+      <div className="camera"></div>
+      <div className="display">
+        <div className="artboard artboard-demo phone-1">Hi.</div>
       </div>
     </div>
   );

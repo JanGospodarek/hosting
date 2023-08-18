@@ -11,9 +11,10 @@ const IndexPage = () => (
     <Navbar />
     <Hero />
     <Imagination />
+    <ExampleProjects />
+
     <Benefits />
     <Technologies />
-    {/* <ExampleProjects /> */}
     <Contact />
     <Footer />
   </div>
