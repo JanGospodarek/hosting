@@ -10,23 +10,23 @@ const Benefits = () => {
       </h2>
       <SingleBenefit
         title="Najnizsza cena na rynku"
-        body="Oferujemy realizacje od A do Z w cenie od 999 zł"
+        body="Oferujemy realizacje witryn internetowych od A do Z w cenie od 999 zł"
         lottieData={PiggyLottie}
         animationWidth="300px"
       />
 
       <SingleBenefit
         title="Szybki czas realizacji"
-        body="Stworzenie witryny internetowej zajmuje nam średnio 20 dni"
+        body="Stworzenie strony internetowej zajmuje nam średnio 20 dni"
         placementClass="self-end"
         lottieData={CarLottie}
         animationWidth="300px"
       />
       <SingleBenefit
-        title="Indywidualne podejście"
-        body="Do kazdego zlecenia podchodzimy jak do własnego produktu" // TODO: zmienić ten opis
+        title="Indywidualne&nbsp;podejście"
+        body="Kazdy klient jest dla nas wyjątkowy" // TODO: zmienić ten opis
         lottieData={IndividualLottie}
-        animationWidth="300px"
+        animationWidth="250px"
       />
     </div>
   );

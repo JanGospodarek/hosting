@@ -12,7 +12,7 @@ const Hero = () => {
         style={{ width: "800px" }}
       />
 
-      <div className="flex flex-col  ml-20 mb-40 items-center">
+      <div className="flex flex-col  ml-20 my-auto items-center">
         <Image src={Logo} alt="logo" width={600} />
 
         <div className="mt-4">
@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-primary"> Twojej</span> firmy w internecie
           </h1>
         </div>
-        <a className="btn btn-primary btn-md btn-outline mt-16">Kontakt</a>
+        <a className="btn btn-primary btn-md btn-outline mt-4">Kontakt</a>
       </div>
     </div>
   );
