@@ -23,7 +23,9 @@ const Imagination = () => {
         />
         <div className="flex flex-col items-center absolute left-0 right-0 mt-64 m-auto z-10">
           <p className="text-6xl font-semibold">Puść wodzę fantazji</p>
-          <p className="text-2xl mt-2">A my przeniesiemy ją do internetu</p>
+          <p className="text-2xl mt-2 text-slate-600">
+            A my przeniesiemy ją do internetu
+          </p>
           <button className="btn btn-outline mt-40 btn-lg">Oferta</button>
         </div>
       </div>

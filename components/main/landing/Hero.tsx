@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-primary"> Twojej</span> firmy w internecie
           </h1>
         </div>
-        <a className="btn btn-primary btn-outline mt-16">Dowiedz się więcej</a>
+        <a className="btn btn-primary btn-md btn-outline mt-16">Kontakt</a>
       </div>
     </div>
   );
