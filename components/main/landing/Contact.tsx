@@ -1,7 +1,6 @@
 import Lottie from "lottie-react";
 import ContactLottie from "../../../public/lottie/contact.json";
 import { useRef, useState } from "react";
-import { sendContactForm } from "../../../lib/api";
 const Contact = () => {
   const [nameErr, setNameErr] = useState(false);
   const [lastNameErr, setLastNameErr] = useState(false);
@@ -26,22 +25,7 @@ const Contact = () => {
     description == "" ? setDescriptionErr(true) : setDescriptionErr(false);
 
     if (name !== "" || lastName !== "" || email !== "" || description !== "") {
-      // handle submition
-      console.log("dziala!!!");
-      // loading
-      try {
-        await sendContactForm({ name, lastName, email, description, company });
-        // setTouched({});
-        // setState(initState);
-        // toast({
-        //   title: "Message sent.",
-        //   status: "success",
-        //   duration: 2000,
-        //   position: "top",
-        // });
-      } catch (error) {
-        // turn off loading and siplay error
-      }
+      //handle submition
     }
   };
   return (
