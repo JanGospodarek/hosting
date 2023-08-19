@@ -17,7 +17,7 @@ const Technologies = () => {
       />
       <SingleTechnologie
         title="Najnowszy interfejs"
-        body="Podązanie za aktualnymi trendami designu witryn internetowych"
+        body="Podążanie za aktualnymi trendami designu witryn internetowych"
       />
     </div>
   );

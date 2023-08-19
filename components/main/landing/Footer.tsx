@@ -7,7 +7,7 @@ const Footer = () => {
         <Image src={Logo} alt="logo" width={150} />
         <p>
           Copyright © 2023 - All right reserved | Kontakt:
-          <b> flowbits.kontakt@gmail.com</b>
+          <b> kontakt.flowbits@gmail.com</b>
         </p>
       </div>
       {/* <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

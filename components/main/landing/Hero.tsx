@@ -27,7 +27,7 @@ const Hero = () => {
     //   />
     // </div>
     <div className="h-screen relative w-screen self-center">
-      <div className="h-screen  bg-gradient-to-b from-slate-900 to-transparent flex flex-col items-center lg:block z-10  p-16">
+      <div className="h-screen  bg-gradient-to-b from-slate-800 to-transparent flex flex-col items-center lg:block z-10  p-16">
         <Image
           src={Logo}
           alt="logo"
