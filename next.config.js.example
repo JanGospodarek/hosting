@@ -1,0 +1,5 @@
+module.exports = {
+  env: {
+    EMAIL_API_KEY: "my-value",
+  },
+};

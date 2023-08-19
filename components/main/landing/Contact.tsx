@@ -26,6 +26,20 @@ const Contact = () => {
 
     if (name !== "" || lastName !== "" || email !== "" || description !== "") {
       //handle submition
+      const data = { name, lastName, email, description, company };
+      try {
+        const res = await fetch("/api/send", {
+          method: "POST",
+          body: JSON.stringify(data),
+          // body: JSON.stringify(data),
+          // headers: {
+          //   "Content-Type": "application/json",
+          // },
+        });
+        console.log(res);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
   return (
