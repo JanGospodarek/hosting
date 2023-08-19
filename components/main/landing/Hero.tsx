@@ -26,14 +26,14 @@ const Hero = () => {
     //     className="md:w-[500px] xl:w-[800px]"
     //   />
     // </div>
-    <div className="h-screen relative">
-      <div className="h-screen bg-gradient-to-b from-slate-900 to-transparent z-10  p-16">
+    <div className="h-screen relative w-screen self-center">
+      <div className="h-screen  bg-gradient-to-b from-slate-900 to-transparent flex flex-col items-center lg:block z-10  p-16">
         <Image
           src={Logo}
           alt="logo"
-          className="w-[300px] md:w-[400px] xl:w-[600px] "
+          className="w-[400px] lg:w-[500px] xl:w-[600px] "
         />
-        <div className="mt-4 w-[300px] md:w-[400px] xl:w-[600px] text-center">
+        <div className="mt-4 w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px]  text-center">
           <h1 className="text-2xl text-slate-200 ">
             Razem stwórzmy przyszłość
             <span className="font-bold"> Twojej</span> firmy w internecie
@@ -44,7 +44,7 @@ const Hero = () => {
       <Lottie
         animationData={HeroAnimation}
         loop={true}
-        className="md:w-[500px] xl:w-[1000px] absolute right-0 top-6 -z-10 "
+        className="md:w-[600px] lg:w-[700px] xl:w-[1000px] absolute mx-auto left-0 right-0 top-72  md:top-56 lg:left-auto lg:right-0   lg:top-36 xl:top-6 -z-10 "
       />
     </div>
   );
