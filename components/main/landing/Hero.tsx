@@ -1,29 +1,50 @@
-import Logo from "../../../public/img/logo2.png";
+import Logo from "../../../public/img/logo2-white.png";
 import Image from "next/image";
 import Lottie from "lottie-react";
 import HeroAnimation from "../../../public/lottie/hero.json";
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col xl:flex-row items-center justify-center ">
-      <div className="flex flex-col mt-36  xl:ml-20  xl:my-auto items-center">
+    // <div className="h-screen flex flex-col xl:flex-row items-center justify-center ">
+    //   <div className="flex flex-col mt-36  xl:ml-20  xl:my-auto items-center">
+    //     <Image
+    //       src={Logo}
+    //       alt="logo"
+    //       className="w-[300px] md:w-[400px] xl:w-[600px]"
+    //     />
+
+    // <div className="mt-4">
+    //   <h1 className="text-2xl text-center">
+    //     Razem stwórzmy przyszłość
+    //     <span className="text-primary"> Twojej</span> firmy w internecie
+    //   </h1>
+    // </div>
+    // <a className="btn btn-primary btn-md btn-outline mt-4">Kontakt</a>
+    //   </div>
+    //   <Lottie
+    //     animationData={HeroAnimation}
+    //     loop={true}
+    //     className="md:w-[500px] xl:w-[800px]"
+    //   />
+    // </div>
+    <div className="h-screen relative">
+      <div className="h-screen bg-gradient-to-b from-slate-900 to-transparent z-10  p-16">
         <Image
           src={Logo}
           alt="logo"
-          className="w-[300px] md:w-[400px] xl:w-[600px]"
+          className="w-[300px] md:w-[400px] xl:w-[600px] "
         />
-
-        <div className="mt-4">
-          <h1 className="text-2xl text-center">
+        <div className="mt-4 w-[300px] md:w-[400px] xl:w-[600px] text-center">
+          <h1 className="text-2xl text-slate-200 ">
             Razem stwórzmy przyszłość
-            <span className="text-primary"> Twojej</span> firmy w internecie
+            <span className="font-bold"> Twojej</span> firmy w internecie
           </h1>
+          <a className="btn btn-lg glass mt-4">Kontakt</a>
         </div>
-        <a className="btn btn-primary btn-md btn-outline mt-4">Kontakt</a>
       </div>
       <Lottie
         animationData={HeroAnimation}
         loop={true}
-        className="md:w-[500px] xl:w-[800px]"
+        className="md:w-[500px] xl:w-[1000px] absolute right-0 top-6 -z-10 "
       />
     </div>
   );
