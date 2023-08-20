@@ -22,7 +22,7 @@ const SingleBenefit = (props: {
         animationData={lottieData}
         loop={true}
         // style={{ width: animationWidth }}
-        className="mx-auto"
+        className="mx-auto max-w-1/3"
       />
     </div>
   );
