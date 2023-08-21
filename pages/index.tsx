@@ -7,13 +7,13 @@ import Hero from "../components/main/landing/Hero";
 import Imagination from "../components/main/landing/Imagination";
 import Navbar from "../components/main/landing/Navbar";
 import Technologies from "../components/main/landing/Technologies";
-import { NextSeo } from "next-seo";
+import { DefaultSeo, NextSeo } from "next-seo";
 
 const IndexPage = () => (
   <>
-    <NextSeo
+    <DefaultSeo
       defaultTitle="Flowbits"
-      description="Tworzymy strony internetowe dla nowych i rozwijających sie firm!"
+      description="Strony WWW od 999zł! Stwórzmy wizytówkę twojej firmy w internecie. Zajmujemy się projektowaniem i tworzeniem stron internetowych dla nowych i rozwijających się firm. "
       canonical="https://flowbits.pl/"
     />
     <div className="max-w-[1440px] mx-auto flex flex-col">
