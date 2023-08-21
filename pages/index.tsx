@@ -7,18 +7,28 @@ import Hero from "../components/main/landing/Hero";
 import Imagination from "../components/main/landing/Imagination";
 import Navbar from "../components/main/landing/Navbar";
 import Technologies from "../components/main/landing/Technologies";
-const IndexPage = () => (
-  <div className="max-w-[1440px] mx-auto flex flex-col">
-    {/* <Navbar /> */}
-    <Hero />
-    <Imagination />
-    <ExampleProjects />
+import { NextSeo } from "next-seo";
 
-    <Benefits />
-    <Technologies />
-    <Contact />
-    <Footer />
-  </div>
+const IndexPage = () => (
+  <>
+    <NextSeo
+      defaultTitle="Flowbits"
+      description="Tworzymy strony internetowe dla nowych i rozwijających sie firm!"
+      canonical="https://flowbits.pl/"
+    />
+    <div className="max-w-[1440px] mx-auto flex flex-col">
+      {/* <Navbar /> */}
+
+      <Hero />
+      <Imagination />
+      <ExampleProjects />
+
+      <Benefits />
+      <Technologies />
+      <Contact />
+      <Footer />
+    </div>
+  </>
 );
 
 export default IndexPage;
