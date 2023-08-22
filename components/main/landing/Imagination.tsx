@@ -1,8 +1,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFountainPreset } from "tsparticles-preset-fountain";
-import Image from "next/image";
-import Bg from "../../../public/img/imagination-bg.png";
+import { Link } from "react-scroll";
 import Lottie from "lottie-react";
 import ImaginationLottie from "../../../public/lottie/imagination.json";
 const Imagination = () => {
@@ -44,7 +43,15 @@ const Imagination = () => {
           <p className="text-2xl mt-2 text-slate-600">
             A my przeniesiemy ją do internetu
           </p>
-          <button className="btn btn-outline mt-40 btn-lg">Oferta</button>
+          <Link
+            to="example_projects"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-outline mt-40 btn-lg"
+          >
+            Projekty
+          </Link>
         </div>
       </div>
     </div>

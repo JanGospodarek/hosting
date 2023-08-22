@@ -55,7 +55,10 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="rounded-lg shadow-xl md:w-3/4 lg:w-[800px] mx-auto mt-24 p-8">
+      <div
+        className="rounded-lg shadow-xl md:w-3/4 lg:w-[800px] mx-auto mt-24 p-8"
+        id="contact"
+      >
         <div className="flex">
           <div className="flex flex-col w-full md:w-1/2">
             <p className="text-3xl font-semibold">Skontaktuj się z nami</p>

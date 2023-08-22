@@ -1,6 +1,18 @@
+## TODOs
+
+- oferta
+- refactor kodu forma kontaktowego + max wartosci pól
+- 404 page
+- zmiana maila do powiadomien
+- generowanie id konwersacji
+- template maili
+- obsługa i18n
+- strony pogladowe
+- optymalizacja tsParticles (jak wylaczyc odbijanie ich)
+
 # TypeScript Next.js example
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This is a really simple project that shows the usage of Next.js with TypeScript
 
 ## Deploy your own
 

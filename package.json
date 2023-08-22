@@ -13,6 +13,7 @@
     "nodemailer": "^6.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.9",
     "react-tsparticles": "^2.12.2",
     "resend": "^1.0.0",
     "tsparticles-preset-fountain": "^2.12.0"

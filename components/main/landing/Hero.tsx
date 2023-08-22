@@ -2,6 +2,7 @@ import Logo from "../../../public/img/logo2-white.png";
 import Image from "next/image";
 import Lottie from "lottie-react";
 import HeroAnimation from "../../../public/lottie/hero.json";
+import { Link } from "react-scroll";
 const Hero = () => {
   return (
     // <div className="h-screen flex flex-col xl:flex-row items-center justify-center ">
@@ -38,7 +39,25 @@ const Hero = () => {
             Razem stwórzmy przyszłość
             <span className="font-bold"> Twojej</span> firmy w internecie
           </h1>
-          <a className="btn btn-lg glass mt-4">Kontakt</a>
+
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-lg glass mt-4"
+          >
+            Kontakt
+          </Link>
+          <Link
+            to="offer"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-lg glass mt-4 ml-8"
+          >
+            Oferta
+          </Link>
         </div>
       </div>
       <Lottie
