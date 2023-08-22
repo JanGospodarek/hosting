@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap");
+
+/* .offers:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.offers:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+} */

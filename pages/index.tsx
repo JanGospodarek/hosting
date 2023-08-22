@@ -18,11 +18,11 @@ const IndexPage = () => (
     <div className="max-w-[1440px] mx-auto flex flex-col">
       {/* <Navbar /> */}
       <Hero />
+      <Offer />
       <Imagination />
       <ExampleProjects />
       <Benefits />
       <Technologies />
-      <Offer></Offer>
       <Contact />
       <Footer />
     </div>

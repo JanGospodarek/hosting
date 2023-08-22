@@ -9,6 +9,7 @@
 - obsługa i18n
 - strony pogladowe
 - optymalizacja tsParticles (jak wylaczyc odbijanie ich)
+- motywy (dodatkowo)
 
 # TypeScript Next.js example
 
