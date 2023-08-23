@@ -108,7 +108,7 @@ const Contact = () => {
             <span className="label-text">Opis projektu</span>
           </label>
           <textarea
-            placeholder="Opisz swój projekt, na przykład: masz moze jakąś wizje, czym się zajmuje twoja firma, co chcesz by się znajdowało na stronie"
+            placeholder="Opisz swój projekt, na przykład: masz może jakąś wizje, czym się zajmuje twoja firma, co chcesz by się znajdowało na stronie"
             ref={descRef}
             className={`textarea textarea-bordered  h-24 ${
               descriptionErr && "textarea-error"

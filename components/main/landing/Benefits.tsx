@@ -17,14 +17,14 @@ const Benefits = () => {
 
       <SingleBenefit
         title="Szybki czas realizacji"
-        body="Stworzenie strony internetowej zajmuje nam średnio 20 dni"
+        body="Stworzenie strony internetowej zajmuje nam średnio 14 dni"
         placementClass="self-end"
         lottieData={CarLottie}
         animationWidth="300px"
       />
       <SingleBenefit
-        title="Indywidualne&nbsp;podejście"
-        body="Każdy klient jest dla nas wyjątkowy" // TODO: zmienić ten opis
+        title="Wsparcie"
+        body="Pomożemy Ci z wyborem hostingu i odpowiemy na wszystkie pytania" // TODO: zmienić ten opis
         lottieData={IndividualLottie}
         animationWidth="300px"
       />

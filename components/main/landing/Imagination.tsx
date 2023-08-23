@@ -34,7 +34,7 @@ const Imagination = () => {
         <Lottie
           animationData={ImaginationLottie}
           loop={true}
-          className="mx-auto absolute h-[800px] "
+          className=" absolute h-[600px] left-0 right-0 "
         ></Lottie>
         <div className="flex flex-col items-center absolute left-0 right-0 mt-64 m-auto z-10">
           <p className="text-6xl font-semibold text-center">
