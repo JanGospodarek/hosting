@@ -1,6 +1,6 @@
 const CoffeeBenefits = () => {
   return (
-    <div className="flex py-16  bg-white">
+    <div className="flex py-24 bg-white">
       <div className="w-1/3 mx-8 text-center">
         <p className="text-3xl mb-2">Wysoka jakość</p>
         <p className="text-xl">

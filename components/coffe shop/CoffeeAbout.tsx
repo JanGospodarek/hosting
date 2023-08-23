@@ -1,8 +1,24 @@
+import Image from "next/image";
+import smile from "../../public/img/smiled.jpeg";
 const CoffeeAbout = () => {
   return (
-    <div className="w-full">
-      <div className="w-full ">
-        <p className=""></p>
+    <div id="about" className="w-full bg-white z-20 p-24 flex">
+      <Image src={smile} alt="dd" width={500}></Image>
+      <div className=" w-full flex flex-col items-center">
+        <div className="relative flex py-5 items-center w-64">
+          <div className="flex-grow border-t-2 border-gray-400"></div>
+          <span className="flex-shrink mx-4 text-gray-400 text-xl">
+            Trochę o nas...
+          </span>
+          <div className="flex-grow border-t-2 border-gray-400"></div>
+        </div>
+        <div className="text-lg px-28 text-center">
+          Kawiarnię prowadzimy w dwójkę od 2012 roku. Od zawsze oboje mażyliśmy
+          o zostaniu baristami. Po paru latach dopracowywania całego procesu
+          parzenia Twojej ulubionej kawy możesz nacieszyć się najlepszym smakiem
+          w Krakowie pochodzącym z ziaren prosto z Kolumbii.
+          <div className="text-gray-400 text-right mt-3">Alicja i Piotr</div>
+        </div>
       </div>
     </div>
   );

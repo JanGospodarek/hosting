@@ -6,7 +6,10 @@ import { useState } from "react";
 const CoffeeMenu = () => {
   const [menu, setMenu] = useState("coffee");
   return (
-    <div className=" w-full h-[700px] flex flex-col items-center overflow-hidden relative">
+    <div
+      id="menu"
+      className=" w-full h-screen flex flex-col items-center overflow-hidden relative"
+    >
       <Image
         src={bgCoffee}
         alt="dd"
