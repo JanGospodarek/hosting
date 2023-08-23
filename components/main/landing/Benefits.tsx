@@ -24,7 +24,7 @@ const Benefits = () => {
       />
       <SingleBenefit
         title="Wsparcie"
-        body="Pomożemy Ci z wyborem hostingu i odpowiemy na wszystkie pytania" // TODO: zmienić ten opis
+        body="Pomożemy Ci z wyborem hostingu, konfiguracją i odpowiemy na wszystkie pytania" // TODO: zmienić ten opis
         lottieData={IndividualLottie}
         animationWidth="300px"
       />
