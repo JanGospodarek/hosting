@@ -1,6 +1,6 @@
 import CoffeeHero from "../components/coffe shop/CoffeeHero";
 import CoffeeBenefits from "../components/coffe shop/CoffeeBenefits";
-import CoffeeContact from "../components/coffe shop/CoffeeAbout";
+import CoffeeAbout from "../components/coffe shop/CoffeeAbout";
 import CoffeeFooter from "../components/coffe shop/CoffeeFooter";
 import Image from "next/image";
 import bg from "../public/img/coffeeHero.jpeg";
@@ -12,7 +12,7 @@ const CoffeePage = () => {
 
       <CoffeeBenefits></CoffeeBenefits>
       <CoffeeMenu></CoffeeMenu>
-      <CoffeeContact></CoffeeContact>
+      <CoffeeAbout></CoffeeAbout>
       <CoffeeFooter></CoffeeFooter>
     </>
   );

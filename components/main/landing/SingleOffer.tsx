@@ -56,7 +56,7 @@ const SingleOffer = ({
             smooth={true}
             offset={-100}
             duration={1500}
-            className="btn btn-neutral mt-4 "
+            className="btn btn-neutral mt-4  "
           >
             Zamów wycenę
           </Link>
