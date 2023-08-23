@@ -3,9 +3,9 @@
 - oferta ✅
 - refactor kodu forma kontaktowego + max wartosci pól
 - 404 page
-- zmiana maila do powiadomien
-- generowanie id konwersacji
-- template maili
+- zmiana maila do powiadomien ✅
+- generowanie id konwersacji ✅
+- template maili ✅
 - obsługa i18n
 - strony pogladowe
 - optymalizacja tsParticles (jak wylaczyc odbijanie ich)

@@ -4,4 +4,5 @@ export interface emailData {
   email: string;
   description: string;
   company: string;
+  uid: string;
 }

@@ -7,10 +7,24 @@ export const NotificationEmailTemplate: React.FC<Readonly<emailData>> = ({
   email,
   company,
   description,
+  uid,
 }) => (
   <div>
     <h1>
-      Welcome, {name},{lastName},{email},{company},{description}!
+      Nowe zamówienie
+      <code>
+        <strong> {uid}</strong>
+      </code>
     </h1>
+    <p>Imie: {name}</p>
+    <p>Nazwisko: {lastName}</p>
+    <p>
+      Email:
+      <code>
+        <strong> {email}</strong>
+      </code>
+    </p>
+    <p>Firma: {company}</p>
+    <p>Opis: {description}</p>
   </div>
 );
