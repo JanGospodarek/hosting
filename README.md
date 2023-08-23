@@ -1,13 +1,14 @@
 ## TODOs
 
 - oferta ✅
-- refactor kodu forma kontaktowego + max wartosci pól
-- 404 page
+- refactor kodu forma kontaktowego + max wartosci pól ✅
+- 404 page ✅
 - zmiana maila do powiadomien ✅
 - generowanie id konwersacji ✅
 - template maili ✅
 - obsługa i18n
-- strony pogladowe
+- strony pogladowe 1/2
+- bug z podwojnym renderowaniem animacji
 - optymalizacja tsParticles (jak wylaczyc odbijanie ich)
 - motywy (dodatkowo)
 

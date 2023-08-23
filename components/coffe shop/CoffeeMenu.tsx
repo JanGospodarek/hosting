@@ -13,14 +13,14 @@ const CoffeeMenu = () => {
       <Image
         src={bgCoffee}
         alt="dd"
-        className={`absolute top-0 left-0 w-full z-0  ${
+        className={`h-screen object-cover absolute top-0 w-full left-0  z-0  ${
           menu !== "coffee" && "invisible"
         } `}
       ></Image>
       <Image
         src={bgCake}
         alt="dd"
-        className={`absolute top-0 left-0 w-full z-0 ${
+        className={`h-screen object-cover  absolute top-0 left-0 w-full z-0 ${
           menu !== "cake" && "invisible"
         } `}
       ></Image>
@@ -28,7 +28,7 @@ const CoffeeMenu = () => {
       <Image
         src={bgSand}
         alt="dd"
-        className={`absolute top-0 left-0 w-full z-0 ${
+        className={`h-screen object-cover absolute top-0 left-0 w-full z-0 ${
           menu !== "sand" && "invisible"
         } `}
       ></Image>
@@ -56,7 +56,7 @@ const CoffeeMenu = () => {
       </div>
       <div className="z-10 grid grid-cols-2 w-full  bg-slate-900 bg-opacity-40 absolute top-0  h-full">
         {menu == "coffee" && (
-          <div className=" flex flex-col  col-start-2 mt-48  text-white  ">
+          <div className=" flex flex-col col-span-2  sm:col-start-2 mt-48  text-white  ">
             <p className="text-3xl">Kawy</p>
 
             <ul className="ml-24 text-xl">
@@ -75,7 +75,7 @@ const CoffeeMenu = () => {
           </div>
         )}
         {menu == "cake" && (
-          <div className=" flex flex-col  col-start-1 mt-48  ml-24 text-white  ">
+          <div className=" flex flex-col  col-span-2  sm:col-start-1 mt-48  ml-24 text-white  ">
             <p className="text-3xl">Desery</p>
 
             <ul className="ml-24 text-xl">
@@ -90,7 +90,7 @@ const CoffeeMenu = () => {
           </div>
         )}
         {menu == "sand" && (
-          <div className=" flex flex-col col-start-1 ml-24 mt-48  text-white ">
+          <div className=" flex flex-col col-span-2  sm:col-start-1 ml-24 mt-48  text-white ">
             <p className="text-3xl">Kanapki</p>
 
             <ul className="ml-24 text-xl">

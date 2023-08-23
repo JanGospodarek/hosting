@@ -20,7 +20,7 @@ const IndexPage = () => (
       <Hero />
       <Offer />
       <Imagination />
-      {/* <ExampleProjects /> */}
+      <ExampleProjects />
       <Benefits />
       <Technologies />
       <Contact />
