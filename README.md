@@ -1,6 +1,6 @@
 ## TODOs
 
-- oferta
+- oferta ✅
 - refactor kodu forma kontaktowego + max wartosci pól
 - 404 page
 - zmiana maila do powiadomien
