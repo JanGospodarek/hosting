@@ -13,6 +13,7 @@ const Contact = () => {
   const descRef = useRef<HTMLTextAreaElement | null>(null);
   const [error, setError] = useState<boolean | null>(null);
   const [alert, setAlert] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSendForm = async () => {
     const name = nameRef.current.value.trim();
@@ -37,11 +38,13 @@ const Contact = () => {
       return;
     //handle submition
     const data = { name, lastName, email, description, company };
+    setLoading(true);
     try {
       const res = await fetch("/api/send", {
         method: "POST",
         body: JSON.stringify(data),
       });
+      setLoading(false);
       if (!res.ok) throw Error("Wiadomość nie została wysłana");
       else setError(false);
     } catch (error) {
@@ -66,6 +69,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Imię"
+              maxLength={20}
               className={`input input-bordered w-full max-w-xs m-3 ${
                 nameErr && "input-error"
               }`}
@@ -74,6 +78,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Nazwisko"
+              maxLength={20}
               className={`input input-bordered w-full max-w-xs m-3 ${
                 lastNameErr && "input-error"
               }`}
@@ -82,6 +87,7 @@ const Contact = () => {
             <input
               type="email"
               placeholder="Email"
+              maxLength={20}
               required
               className={`input input-bordered w-full max-w-xs m-3 ${
                 emailErr && "input-error"
@@ -90,6 +96,7 @@ const Contact = () => {
             />
             <input
               type="text"
+              maxLength={30}
               placeholder="Nazwa twojej firmy (opcjonalne)"
               className="input input-bordered w-full max-w-xs mx-3 mt-3"
               ref={companyRef}
@@ -110,6 +117,7 @@ const Contact = () => {
           <textarea
             placeholder="Opisz swój projekt, na przykład: masz może jakąś wizje, czym się zajmuje twoja firma, co chcesz by się znajdowało na stronie"
             ref={descRef}
+            maxLength={400}
             className={`textarea textarea-bordered  h-24 ${
               descriptionErr && "textarea-error"
             }`}
@@ -117,7 +125,11 @@ const Contact = () => {
         </div>
 
         <button className="btn btn-success m-4" onClick={handleSendForm}>
-          Wyślij
+          {!loading ? (
+            "Wyślij"
+          ) : (
+            <span className="loading loading-spinner"></span>
+          )}
         </button>
       </div>
       {alert && (

@@ -5,6 +5,7 @@ type Props = {
   bgPrimaryColor: string;
   bgSecondaryColor: string;
   image: any;
+  width: string;
 };
 
 const SingleOffer = ({
@@ -12,6 +13,7 @@ const SingleOffer = ({
   bgSecondaryColor,
   image,
   children,
+  width,
 }: Props) => {
   return (
     <>
@@ -63,7 +65,7 @@ const SingleOffer = ({
           <Image
             src={image}
             alt="tedst"
-            width={500}
+            style={{ width }}
             className="  z-10 shadow-lg shadow-slate-950"
           />
         </div>

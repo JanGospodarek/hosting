@@ -43,7 +43,7 @@ const Imagination = () => {
           <p className="text-2xl mt-2 text-slate-600">
             A my przeniesiemy ją do internetu
           </p>
-          <Link
+          {/* <Link
             to="example_projects"
             smooth={true}
             offset={-100}
@@ -51,7 +51,7 @@ const Imagination = () => {
             className="btn btn-outline mt-40 btn-lg"
           >
             Projekty
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
