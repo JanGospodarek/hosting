@@ -19,7 +19,7 @@ const CoffeeAbout = () => {
           </span>
           <div className="flex-grow border-t-2 border-gray-400"></div>
         </div>
-        <div className="text-lg px-4 sm:px-28 text-center">
+        <div className="text-lg sm:px-28 sm:text-center">
           Kawiarnię prowadzimy w dwójkę od 2012 roku. Od zawsze oboje mażyliśmy
           o zostaniu baristami. Po paru latach dopracowywania całego procesu
           parzenia Twojej ulubionej kawy możesz nacieszyć się najlepszym smakiem

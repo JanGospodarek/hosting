@@ -54,7 +54,7 @@ const CoffeeMenu = () => {
           Kanapki
         </button>
       </div>
-      <div className="z-10 grid grid-cols-2 w-full  bg-slate-900 bg-opacity-40 absolute top-0  h-full">
+      <div className="z-10 grid grid-cols-2 w-full   bg-slate-900 bg-opacity-40 absolute top-0  h-full">
         {menu == "coffee" && (
           <div className=" flex flex-col col-span-2  sm:col-start-2 mt-48  text-white  ">
             <p className="text-3xl">Kawy</p>
@@ -75,7 +75,7 @@ const CoffeeMenu = () => {
           </div>
         )}
         {menu == "cake" && (
-          <div className=" flex flex-col  col-span-2  sm:col-start-1 mt-48  ml-24 text-white  ">
+          <div className=" flex flex-col col-span-2 justify-self-center sm:col-span-1  sm:col-start-1 mt-48 sm:justify-self-end sm:mr-24  text-white  ">
             <p className="text-3xl">Desery</p>
 
             <ul className="ml-24 text-xl">
@@ -90,7 +90,7 @@ const CoffeeMenu = () => {
           </div>
         )}
         {menu == "sand" && (
-          <div className=" flex flex-col col-span-2  sm:col-start-1 ml-24 mt-48  text-white ">
+          <div className=" flex flex-col col-span-2 justify-self-center sm:col-span-1  sm:col-start-1 mt-48 sm:justify-self-end sm:mr-24  text-white  ">
             <p className="text-3xl">Kanapki</p>
 
             <ul className="ml-24 text-xl">

@@ -1,6 +1,9 @@
 const CoffeeFooter = () => {
   return (
-    <div id="footer" className="bg-gray-700 w-full p-8 flex text-white">
+    <div
+      id="footer"
+      className="bg-gray-700 w-full p-8 flex text-white flex-wrap justify-center"
+    >
       <div className="p-5">
         <p className="text-xl text-slate-400">Kontakt</p>
         <p className="my-2">kontakt@kawiarnia.pl</p>

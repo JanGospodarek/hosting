@@ -78,7 +78,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Nazwisko"
-              maxLength={20}
+              maxLength={30}
               className={`input input-bordered w-full max-w-xs m-3 ${
                 lastNameErr && "input-error"
               }`}
@@ -87,7 +87,7 @@ const Contact = () => {
             <input
               type="email"
               placeholder="Email"
-              maxLength={20}
+              maxLength={40}
               required
               className={`input input-bordered w-full max-w-xs m-3 ${
                 emailErr && "input-error"
@@ -96,7 +96,7 @@ const Contact = () => {
             />
             <input
               type="text"
-              maxLength={30}
+              maxLength={40}
               placeholder="Nazwa twojej firmy (opcjonalne)"
               className="input input-bordered w-full max-w-xs mx-3 mt-3"
               ref={companyRef}
@@ -117,7 +117,7 @@ const Contact = () => {
           <textarea
             placeholder="Opisz swój projekt, na przykład: masz może jakąś wizje, czym się zajmuje twoja firma, co chcesz by się znajdowało na stronie"
             ref={descRef}
-            maxLength={400}
+            maxLength={1000}
             className={`textarea textarea-bordered  h-24 ${
               descriptionErr && "textarea-error"
             }`}
