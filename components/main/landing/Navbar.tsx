@@ -1,22 +1,6 @@
 const Navbar = () => {
   return (
     <div className="fixed top-0 right-0 z-10">
-      {/* <div className=" shadow-xl px-6 bg-base-100 z-10 rounded-bl-xl hidden lg:block ">
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Realizacje</a>
-            </li>
-            <li>
-              <a>Oferta</a>
-            </li>
-
-            <li>
-              <a>Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div> */}
       <div className="dropdown m-4 z-10 dropdown-bottom dropdown-end">
         <label tabIndex={0} className="btn ">
           <svg

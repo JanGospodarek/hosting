@@ -64,8 +64,8 @@ const Contact = () => {
       >
         <div className="flex">
           <div className="flex flex-col w-full md:w-1/2">
-            <p className="text-3xl font-semibold">Skontaktuj się z nami</p>
-            <p className="text-slate-500">Zamów bezpłatną wycenę</p>
+            <h2 className="text-3xl font-semibold">Skontaktuj się z nami</h2>
+            <h3 className="text-slate-500">Zamów bezpłatną wycenę</h3>
             <input
               type="text"
               placeholder="Imię"

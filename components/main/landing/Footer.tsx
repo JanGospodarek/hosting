@@ -10,20 +10,6 @@ const Footer = () => {
           <b> kontakt.flowbits@gmail.com</b>
         </p>
       </div>
-      {/* <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Realizacje</a>
-          </li>
-          <li>
-            <a>Oferta</a>
-          </li>
-
-          <li>
-            <a>Kontakt</a>
-          </li>
-        </ul>
-      </div> */}
     </footer>
   );
 };

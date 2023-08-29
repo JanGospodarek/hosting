@@ -15,7 +15,7 @@ const SingleBenefit = (props: {
       }`}
     >
       <div className="flex flex-col my-auto">
-        <p className="text-2xl font-semibold">{title}</p>
+        <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="text-lg text-slate-600 mt-2">{body}</p>
       </div>
       <Lottie

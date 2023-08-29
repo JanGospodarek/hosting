@@ -11,12 +11,12 @@ const Offer = () => {
         bgSecondaryColor="#312e81" //900
         width="200px"
       >
-        <p className="text-4xl  lg:text-5xl font-bold m-8 text-white">
+        <h2 className="text-4xl  lg:text-5xl font-bold m-8 text-white">
           OnePage
-        </p>
-        <p className="text-2xl lg:text-3xl text-white sm:w-8/12">
+        </h2>
+        <h3 className="text-2xl lg:text-3xl text-white sm:w-8/12">
           Stanowi świetną wizytówkę dla Twojej firmy.
-        </p>
+        </h3>
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
           Witryna bez dodatkowych podstron zapewni wysoką przejżystość treści, z
           którą potencjalni klienci będą mogli się zapoznać wygodnie przewijając
@@ -29,13 +29,13 @@ const Offer = () => {
         bgSecondaryColor="#881337"
         width="500px"
       >
-        <p className="text-4xl lg:text-5xl font-bold m-8 text-white">
+        <h2 className="text-4xl lg:text-5xl font-bold m-8 text-white">
           MultiPage
-        </p>
-        <p className="text-2xl lg:text-3xl text-white sm:w-8/12">
+        </h2>
+        <h3 className="text-2xl lg:text-3xl text-white sm:w-8/12">
           Tworzy profesjonalny wizerunek jednocześnie zawierając wiele
           informacji
-        </p>
+        </h3>
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
           Witryna zawierająca podstrony pozwoli klientom na lepsze zapoznanie
           się z ofertą Twojego biznesu. Strona spełni swoją rolę zarówno w
@@ -48,12 +48,12 @@ const Offer = () => {
         bgSecondaryColor="#365314"
         width="500px"
       >
-        <p className="text-4xl lg:text-5xl font-bold m-8 text-white">
+        <h2 className="text-4xl lg:text-5xl font-bold m-8 text-white">
           Admin panel
-        </p>
-        <p className="text-2xl lg:text-3xl text-white sm:w-8/12">
+        </h2>
+        <h3 className="text-2xl lg:text-3xl text-white sm:w-8/12">
           Weź sprawy w swoje ręce!
-        </p>
+        </h3>
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
           Panel administratora dedykowany dla Twojej strony internetowej pozwoli
           Ci na własnoręczną edycje np. produktów czy menu restauracji.

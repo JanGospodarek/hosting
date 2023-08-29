@@ -1,4 +1,3 @@
-import SingleExampleProject from "./SingleExampleProject";
 import Image from "next/image";
 import CoffeePreview from "../../../public/img/coffe_preview.png";
 import Link from "next/link";
@@ -23,34 +22,6 @@ const ExampleProjects = () => {
             </div>
           </div>
         </Link>
-
-        {/* <div className="mockup-browser border bg-base-300">
-          <div className="mockup-browser-toolbar">
-            <div className="input">https://wypozyczalnia.com</div>
-          </div>
-          <div className="flex justify-center px-4 py-16 bg-base-200">
-            Hello!
-          </div>
-        </div> */}
-        {/* <div className="mockup-phone ">
-          <div className="camera"></div>
-          <div className="display">
-            <div className="artboard artboard-demo phone-1">Hi.</div>
-          </div>
-        </div>
-        <div className="mockup-phone ">
-          <div className="camera"></div>
-          <div className="display">
-            <div className="artboard artboard-demo phone-1">Hi.</div>
-          </div>
-        </div>
-
-        <div className="mockup-phone ">
-          <div className="camera"></div>
-          <div className="display">
-            <div className="artboard artboard-demo phone-1">Hi.</div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

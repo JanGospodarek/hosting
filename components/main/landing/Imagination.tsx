@@ -31,12 +31,12 @@ const Imagination = () => {
         ></Image> */}
 
       <div className="flex flex-col items-center  mt-24  ">
-        <p className="text-6xl font-semibold text-center">
+        <h2 className="text-6xl font-semibold text-center">
           Puść wodze fantazji
-        </p>
-        <p className="text-2xl mt-2 text-slate-600">
+        </h2>
+        <h3 className="text-2xl mt-2 text-slate-600">
           A my przeniesiemy ją do internetu
-        </p>
+        </h3>
         <Link
           to="example_projects"
           smooth={true}
