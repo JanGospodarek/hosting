@@ -15,13 +15,21 @@ const RentalAboutUs = () => {
       </h1>
       <div>
         <div className="w-full py-4 px-64">
+          {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
+ @ts-ignore */}
           <Stepper
             activeStep={activeStep}
             isLastStep={(value) => setIsLastStep(value)}
             isFirstStep={(value) => setIsFirstStep(value)}
           >
+            {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
+ @ts-ignore */}
             <Step onClick={() => setActiveStep(0)}>1</Step>
+            {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
+ @ts-ignore */}
             <Step onClick={() => setActiveStep(1)}>2</Step>
+            {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
+ @ts-ignore */}
             <Step onClick={() => setActiveStep(2)}>3</Step>
           </Stepper>
 
