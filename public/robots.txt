@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /coffee
+
+User-agent: *
+Disallow: /rental
+
+User-agent: *
+Allow: /
