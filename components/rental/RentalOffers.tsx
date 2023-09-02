@@ -1,9 +1,10 @@
 import RentalSingleOffer from "./RentalSingleOffer";
-import porsche from "../../public/img/porsche.webp";
+import sport from "../../public/img/sport.webp";
+import luksus from "../../public/img/luks.webp";
 const RentalOffers = () => {
   return (
     <div className="w-full ">
-      <RentalSingleOffer image={porsche}>
+      <RentalSingleOffer image={sport}>
         <h2 className="text-4xl  lg:text-5xl font-bold m-8 text-white uppercase italic">
           Sport
         </h2>
@@ -15,7 +16,7 @@ const RentalOffers = () => {
           samochodu sportowego to takze świetna okazja na prezent!
         </p>
       </RentalSingleOffer>
-      <RentalSingleOffer image={porsche}>
+      <RentalSingleOffer image={luksus}>
         <h2 className="text-4xl  lg:text-5xl font-bold m-8 text-white uppercase italic">
           Luksus
         </h2>

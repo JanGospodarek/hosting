@@ -15,8 +15,8 @@ const RentalSingleOffer = (props: Props) => {
         }}
       >
         {props.children}
-        <Link href="contact" className="btn btn-outline mt-4 uppercase ">
-          Zamów wycenę
+        <Link href="rental/oferta" className="btn btn-outline mt-4 uppercase ">
+          Zobacz ofertę
         </Link>
       </div>
       <Image

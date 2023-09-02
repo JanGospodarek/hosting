@@ -10,7 +10,7 @@ const RentalAboutUs = () => {
   const handlePrev = () => !isFirstStep && setActiveStep((cur) => cur - 1);
   return (
     <div className=" w-full flex flex-col pt-10">
-      <h1 className="text-3xl italic font-bold uppercase mx-auto">
+      <h1 className="text-3xl italic font-bold uppercase mx-auto text-white">
         Jak to działa?
       </h1>
       <div>
@@ -42,7 +42,7 @@ const RentalAboutUs = () => {
           {activeStep == 1 && (
             <RentalStep
               title="Wypełnij umowę"
-              body="Po skontaktowaniu się z Tobą, będziesz musiał wypełnić umowę i inną papierologię w naszej siedzibie. Nasz specjalista przeprowadzi Cię przez cały proces i odpowie na wszystkie pytania."
+              body="Po tym jak skontaktujemy się z Tobą, będziesz musiał wypełnić dokumenty wynajmu w naszej siedzibie. Nasz specjalista przeprowadzi Cię przez cały proces i odpowie na wszystkie pytania."
             />
           )}
           {activeStep == 2 && (

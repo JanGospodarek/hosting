@@ -6,3 +6,13 @@ export interface emailData {
   company: string;
   uid: string;
 }
+export interface Car {
+  brand: string;
+  model: string;
+  parameters: string[];
+  price: number;
+  imageUrl: string;
+  carId: string;
+  type: "sport" | "luxury";
+}
+export type Cars = Car[];
