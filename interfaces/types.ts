@@ -12,7 +12,7 @@ export interface Car {
   parameters: string[];
   price: number;
   imageUrl: string;
-  carId: string;
+  carId: number;
   type: "sport" | "luxury";
 }
 export type Cars = Car[];
