@@ -1,54 +1,67 @@
 import { useEffect, useState } from "react";
 import RentalNavbar from "../../../components/rental/RentalNavbar";
 import RentalRentOffer from "../../../components/rental/RentalRentOffer";
-import { Cars } from "../../../interfaces/types";
+import { Car, Cars } from "../../../interfaces/types";
+import { UseFetch } from "../../../components/hooks/UseFetch";
+import RentalFooter from "../../../components/rental/RentalFooter";
 const RentalPage = () => {
   const [cars, setCars] = useState<Cars | []>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [allCars, setAllCars] = useState<Cars | []>([]);
+
+  const { loading, data, error } = UseFetch({
+    url: "/api/readJson",
+    method: "GET",
+  });
+
   useEffect(() => {
-    const fetcher = async () => {
-      setLoading(true);
-      try {
-        const res = (await fetch("/api/readJson", {
-          method: "GET",
-        })) as Response;
-        const data = await res.json();
-        setLoading(false);
-        console.log(data);
+    if (data) {
+      setAllCars(data.cars);
+      setCars(data.cars);
+    }
+  }, [data]);
 
-        setCars(data.cars);
-
-        if (!res.ok) throw Error("Błąd pobierania danych");
-        else setError(false);
-      } catch (error) {
-        console.log(error);
-        setError(true);
-      }
-    };
-    fetcher();
-  }, []);
+  const filter = (type: "sport" | "luxury" | "all") => {
+    if (type == "all") setCars(allCars);
+    else setCars(allCars.filter((el: Car) => el.type == type));
+  };
   return (
     <div data-theme="black" className="font-rental ">
       <RentalNavbar />
       <div className="w-full">
         <div className="flex w-full gap-2 px-24 py-8">
-          <button className="btn btn-outline rounded-xl btn-sm uppercase">
+          <button
+            className="btn btn-outline rounded-xl btn-sm uppercase"
+            onClick={() => filter("all")}
+          >
             wszystkie
           </button>
-          <button className="btn btn-outline rounded-xl btn-sm uppercase">
+          <button
+            className="btn btn-outline rounded-xl btn-sm uppercase"
+            onClick={() => filter("sport")}
+          >
             sport
           </button>
-          <button className="btn btn-outline rounded-xl btn-sm uppercase">
+          <button
+            className="btn btn-outline rounded-xl btn-sm uppercase"
+            onClick={() => filter("luxury")}
+          >
             luksus
           </button>
         </div>
-        <div className="">
-          {cars.map((car) => (
-            <RentalRentOffer car={car} />
-          ))}
+        <div className="min-h-screen ">
+          {loading && (
+            <div className="w-full h-full flex justify-center items-center text-3xl">
+              Loading...
+            </div>
+          )}
+          {!loading &&
+            !error &&
+            cars.map((car: Car) => (
+              <RentalRentOffer car={car} key={car.carId} />
+            ))}
         </div>
       </div>
+      <RentalFooter />
     </div>
   );
 };

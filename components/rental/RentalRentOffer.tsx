@@ -14,12 +14,12 @@ const RentalRentOffer = (props: { car: Car }) => {
           <p className=" italic text-lg">{model}</p>
           <ul className="text-md text-gray-600">
             {parameters.map((parameter) => (
-              <li>{parameter}</li>
+              <li key={Math.random()}>{parameter}</li>
             ))}
           </ul>
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-3xl font-bold italic">{price} / dzień</p>
+          <p className="text-3xl font-bold italic">{price} / DZIEŃ</p>
         </div>
       </div>
     </Link>

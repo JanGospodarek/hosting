@@ -5,7 +5,9 @@ const RentalNavbar = () => {
   return (
     <div className="w-full  flex items-center p-6 justify-between">
       <div className="">
-        <Image src={logo} alt="logo" width={300} />
+        <Link href="/rental">
+          <Image src={logo} alt="logo" width={300} />
+        </Link>
       </div>
       <div>
         <Link
