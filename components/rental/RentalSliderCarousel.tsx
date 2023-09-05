@@ -28,7 +28,7 @@ export default function CarouselCustomNavigation() {
         transition={{ duration: 1 }}
         autoplay={true}
         loop={true}
-        autoplayDelay={5000}
+        autoplayDelay={3500}
         nextArrow={() => <button className="hidden">k</button>}
         prevArrow={() => <button className="hidden">k</button>}
       >

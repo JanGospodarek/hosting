@@ -31,6 +31,9 @@ const RentalAboutUs = () => {
             {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
  @ts-ignore */}
             <Step onClick={() => setActiveStep(2)}>3</Step>
+            {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
+ @ts-ignore */}
+            <Step onClick={() => setActiveStep(3)}>4</Step>
           </Stepper>
 
           {activeStep == 0 && (
@@ -50,6 +53,13 @@ const RentalAboutUs = () => {
               title="Ciesz się jazdą"
               body="Nasz samochód zawiezie Cię szybko i komfortowo wszędzie gdzie tylko chcesz. Zapewnimy Ci całodobowe wsparcie, w tym pomoc drogową, dostępną w całej Polsce."
             />
+          )}
+          {activeStep == 3 && (
+            <div className="mt-4 flex flex-col text-center">
+              <button className="btn btn-outline btn-success btn-lg uppercase italic font-semibold mx-auto my-16">
+                kontakt
+              </button>
+            </div>
           )}
           <div className="mt-4 flex justify-between">
             <button

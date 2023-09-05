@@ -32,10 +32,7 @@ const RentalPage = () => {
           </div>
         )}
         {!loading && !error && info && (
-          <div className="mx-6 md:mx-16 lg:mx-20 flex flex-col-reverse lg:grid  lg:grid-cols-2  ">
-            <div>
-              <img src={info.imageUrl} alt="test" className="object-cover" />
-            </div>
+          <div className="flex flex-col w-full">
             <div className="flex flex-col p-8 justify-center ">
               <p className="italic uppercase font-semibold text-6xl text-white text-center w-full">
                 {info.brand}
@@ -56,6 +53,25 @@ const RentalPage = () => {
               <button className="btn mx-auto px-4 uppercase btn-outline mt-2">
                 Zamów - {info.price}
               </button>
+            </div>
+            <div className="mx-6 md:mx-16 lg:mx-20 flex flex-col lg:grid  lg:grid-cols-2  ">
+              <div>
+                <img src={info.imageUrl} alt="test" className="object-cover" />
+              </div>
+              <div className="m-6 sm:m-16 flex justify-center items-center text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, aliquid voluptatem excepturi quaerat aliquam
+                consequatur illo eaque quibusdam est debitis ipsum
+                exercitationem consequuntur maiores aperiam autem nihil porro
+                quae quam. Consequuntur libero earum, adipisci hic enim ut harum
+                porro aliquid in debitis rerum quia odit, nostrum laboriosam
+                facilis aliquam fugit doloremque? Animi molestias delectus
+                doloremque itaque placeat fugiat quae officiis. Nisi illo
+                blanditiis eveniet dolorem fuga voluptate temporibus nulla
+                expedita dolores vel modi, asperiores ipsa pariatur repudiandae
+                facere est eum a ipsum accusantium voluptatum rem provident
+                possimus! Vel, culpa velit?
+              </div>
             </div>
           </div>
         )}
