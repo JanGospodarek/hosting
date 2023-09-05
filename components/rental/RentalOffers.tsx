@@ -3,7 +3,7 @@ import sport from "../../public/img/sport.webp";
 import luksus from "../../public/img/luks.webp";
 const RentalOffers = () => {
   return (
-    <div className="w-full ">
+    <div className=" flex flex-col ">
       <RentalSingleOffer image={sport}>
         <h2 className="text-4xl  lg:text-5xl font-bold m-8 text-white uppercase italic">
           Sport

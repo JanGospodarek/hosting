@@ -7,7 +7,7 @@ const RentalFooter = () => {
       <div className="p-5">
         <p className="text-xl text-slate-400">Kontakt</p>
         <p className="my-2">
-          <span className="text-gray-700">mail </span> kontakt@kawiarnia.pl
+          <span className="text-gray-700">mail </span> kontakt@wypozyczalnia.pl
         </p>
         <p>
           <span className="text-gray-700">telefon </span>+48 123 123 123

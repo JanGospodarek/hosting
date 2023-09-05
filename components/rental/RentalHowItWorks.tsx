@@ -9,12 +9,12 @@ const RentalAboutUs = () => {
   const handleNext = () => !isLastStep && setActiveStep((cur) => cur + 1);
   const handlePrev = () => !isFirstStep && setActiveStep((cur) => cur - 1);
   return (
-    <div className=" w-full flex flex-col pt-10">
+    <div className=" w-full flex flex-col pb-10 pt-16">
       <h1 className="text-3xl italic font-bold uppercase mx-auto text-white">
         Jak to działa?
       </h1>
       <div>
-        <div className="w-full py-4 px-64">
+        <div className="w-full py-4 px-8 md:px-44 lg:px-64">
           {/*eslint-disable-next-line @typescript-eslint/ban-ts-comment
  @ts-ignore */}
           <Stepper
