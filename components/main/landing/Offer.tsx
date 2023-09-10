@@ -18,9 +18,11 @@ const Offer = () => {
           Stanowi świetną wizytówkę dla Twojej firmy.
         </h3>
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
-          Witryna bez dodatkowych podstron zapewni wysoką przejżystość treści, z
-          którą potencjalni klienci będą mogli się zapoznać wygodnie przewijając
-          stronę.
+          Witryna bez dodatkowych podstron zapewni wysoką przejrzystość treści,
+          przy jednoczesnym zachowaniu eleganckiego wyglądu, z którą potencjalni
+          klienci będą mogli się zapoznać wygodnie przewijając stronę. Świetny
+          wybór dla freelancerów potrzebujących wizytówki, restauracji czy
+          kawiarni.
         </p>
       </SingleOffer>
       <SingleOffer
@@ -39,7 +41,10 @@ const Offer = () => {
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
           Witryna zawierająca podstrony pozwoli klientom na lepsze zapoznanie
           się z ofertą Twojego biznesu. Strona spełni swoją rolę zarówno w
-          małych jak i duzych firmach.
+          małych jak i duzych firmach. Wiele podstron umożliwia zastosowanie
+          większej ilości elementów, z których korzysta potencjalny klient,
+          takich jak dedykowany system rezerwacji lub dostosowanie danej oferty
+          pod siebie.
         </p>
       </SingleOffer>
       <SingleOffer
@@ -55,8 +60,11 @@ const Offer = () => {
           Weź sprawy w swoje ręce!
         </h3>
         <p className="text-xl lg:text-2xl text-white mt-4 sm:w-9/12 ">
-          Panel administratora dedykowany dla Twojej strony internetowej pozwoli
-          Ci na własnoręczną edycje np. produktów czy menu restauracji.
+          Panel administratora stworzony specjalnie dla Twojej strony
+          internetowej pozwoli Ci na własnoręczną edycje np. produktów czy menu
+          restauracji. Zapewni Ci to większą swobodę i szybkość w zmianie oferty
+          znajdującej się na stronie. Możliwe jest takze powierzenie obslugi
+          Twojej witryny naszemu zespołowi.
         </p>
       </SingleOffer>
     </div>

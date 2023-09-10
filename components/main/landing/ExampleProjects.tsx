@@ -1,27 +1,56 @@
-import Image from "next/image";
 import CoffeePreview from "../../../public/img/coffe_preview.png";
-import Link from "next/link";
+import RentalPreview from "../../../public/img/rental.png";
+import SingleExampleProject from "./SingleExampleProject";
 const ExampleProjects = () => {
   return (
     <div className="flex flex-col mt-36 mx-16  " id="example_projects">
       <h2 className="text-4xl font-semibold text-center w-full mb-10">
         Przykładowe projekty
       </h2>
-      <div className="flex justify-around flex-wrap">
-        <Link href="/coffee">
-          <div className="mockup-browser border bg-base-300 sm:mx-16 md:mx-40 xl:mx-64">
-            <div className="mockup-browser-toolbar">
-              <div className="input">https://kawiarnia.com</div>
-            </div>
-            <div className="flex justify-center px-4 py-16 bg-base-200">
-              <Image
-                src={CoffeePreview}
-                alt="coffe"
-                className="  h-full"
-              ></Image>
-            </div>
-          </div>
-        </Link>
+      <div className="flex justify-around flex-wrap ">
+        <SingleExampleProject
+          websiteUrl="https://wypozyczalnia.com"
+          hrefUrl="/rental"
+          image={RentalPreview}
+        >
+          <h1 className="text-2xl font-semibold">Wypożyczalnia</h1>
+          <p className="my-2">
+            Interfejs zgodny z najnowszymi trendami, który dostarcza
+            potencjalnym klientom informacji w bardzo prosty i przystępny
+            sposób. Witryna może być rozszerzona o takie elementy jak: kolejne
+            podstrony, dedykowany system rezerwacji, mapkę z lokalizacją,
+            obsługę motywów przeglądarki
+          </p>
+          <ul className="list-disc mx-6 ">
+            <li>Multi page</li>
+            <li>Przełączanie między podstronami bez przeładowania</li>
+            <li>Responsywna na wszystkich urządzeniach</li>
+            <li>Formularz kontaktowy</li>
+            <li>Slider</li>
+            <li>Animowane kroki</li>
+            <li>Nowoczesny interfejs</li>
+          </ul>
+        </SingleExampleProject>
+        <SingleExampleProject
+          websiteUrl="https://kawiarnia.com"
+          hrefUrl="/coffee"
+          image={CoffeePreview}
+        >
+          <h1 className="text-2xl font-semibold">Kawiarnia</h1>
+          <p className="my-2">
+            Bardzo prosty, przejrzysty interfejs, który jest elegancki i
+            praktyczny. Strona idealnie nadaje się dla gastronomii. Witryna może
+            być rozszerzona o takie elementy jak: podstrony, mapkę z
+            lokalizacją,obsługę motywów przeglądarki, odnośnik do systemu
+            zamawiania zewnętrznego partnera (Glovo, Pyszne.pl itd.).
+          </p>
+          <ul className="list-disc mx-6 ">
+            <li>One page</li>
+            <li>Responsywna na wszystkich urządzeniach</li>
+            <li>Formularz kontaktowy</li>
+            <li>Nowoczesny interfejs</li>
+          </ul>
+        </SingleExampleProject>
       </div>
     </div>
   );
