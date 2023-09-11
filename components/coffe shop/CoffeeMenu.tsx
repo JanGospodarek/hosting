@@ -3,8 +3,36 @@ import bgCoffee from "../../public/img/kawa_na_stole.jpeg";
 import bgCake from "../../public/img/cake.jpg";
 import bgSand from "../../public/img/kanapka.jpeg";
 import { useState } from "react";
+import CoffeeSingleMenu from "./CoffeeSingleMenu";
+import { Dishes } from "../../interfaces/types";
+
+const coffes: Dishes = [
+  { name: "Espresso", price: 8 },
+  { name: "Mocha", price: 13 },
+  { name: "Latte", price: 12 },
+  { name: "Latte Macchiato", price: 15 },
+  { name: "Cappuccino", price: 13 },
+  { name: "Americana", price: 15 },
+  { name: "Flat white", price: 14 },
+];
+const desserts: Dishes = [
+  { name: "Sernik wiedeński", price: 18 },
+  { name: "Szarlotka", price: 16 },
+  { name: "Tiramisu", price: 21 },
+  { name: "Zestaw ciastek", price: 12 },
+  { name: "Pączek", price: 6 },
+];
+const sandiwches: Dishes = [
+  { name: "Cheesesteak", price: 25 },
+  { name: "Croque-madame", price: 31 },
+  { name: "Reuben", price: 28 },
+  { name: "Gatsby", price: 25 },
+  { name: "BLT", price: 23 },
+  { name: "Sloppy Joe", price: 23 },
+  { name: "Grilled Cheese", price: 18 },
+];
 const CoffeeMenu = () => {
-  const [menu, setMenu] = useState("coffee");
+  const [menu, setMenu] = useState<"coffee" | "cake" | "sand">("coffee");
   return (
     <div
       id="menu"
@@ -32,75 +60,40 @@ const CoffeeMenu = () => {
           menu !== "sand" && "invisible"
         } `}
       ></Image>
-
-      <div className="mx-auto join mt-8 z-20">
+      <div className="w-full h-full absolute top-0 left-0 z-10 bg-gray-900 bg-opacity-60"></div>
+      <div className="mx-auto join mt-8 z-20 ">
         <button
-          className="btn btn-lg btn-ghost text-white join-item"
+          className={`btn btn-lg btn-ghost text-white join-item text-xl ${
+            menu === "cake" && "underline decoration-4 underline-offset-8		"
+          }`}
           onClick={() => setMenu("cake")}
         >
           Desery
         </button>
         <button
-          className="btn btn-lg btn-ghost text-white join-item"
+          className={`btn btn-lg btn-ghost text-white join-item text-xl ${
+            menu === "coffee" && "underline decoration-4 underline-offset-8		"
+          }`}
           onClick={() => setMenu("coffee")}
         >
           Kawy
         </button>
-
         <button
-          className="btn btn-lg btn-ghost text-white join-item"
+          className={`btn btn-lg btn-ghost text-white join-item text-xl ${
+            menu === "sand" && "underline decoration-4 underline-offset-8		"
+          }`}
           onClick={() => setMenu("sand")}
         >
           Kanapki
         </button>
       </div>
-      <div className="z-10 grid grid-cols-2 w-full   bg-slate-900 bg-opacity-40 absolute top-0  h-full">
-        {menu == "coffee" && (
-          <div className=" flex flex-col col-span-2  sm:col-start-2 mt-48  text-white  ">
-            <p className="text-3xl">Kawy</p>
-
-            <ul className="ml-24 text-xl">
-              <li>Espresso 9,-</li>
-              <li>Espresso doppio 15,-</li>
-              <li>Espresso macchiato 10,-</li>
-              <li>Espresso macchiato doppio 16,-</li>
-              <li>Kawa Americano (czarna) 12,-</li>
-              <li>Kawa Americano (czarna) duża 14,-</li>
-              <li>Kawa z mlekiem 14,-</li>
-              <li>Kawa z mlekiem duża 16,-</li>
-              <li>Flat white 16,-</li>
-              <li>Cappuccino 14,-</li>
-              <li>Latte macchiato 16,-</li>
-            </ul>
-          </div>
-        )}
+      <div className="z-10  w-full  absolute top-0  h-full flex flex-col items-center justify-center">
+        {menu == "coffee" && <CoffeeSingleMenu title="Kawy" dishes={coffes} />}
         {menu == "cake" && (
-          <div className=" flex flex-col col-span-2 justify-self-center sm:col-span-1  sm:col-start-1 mt-48 sm:justify-self-end sm:mr-24  text-white  ">
-            <p className="text-3xl">Desery</p>
-
-            <ul className="ml-24 text-xl">
-              <li>Szarlotka 10,-</li>
-              <li>Naleśniki z serem 20,-</li>
-
-              <li>Sernik 12,-</li>
-              <li>Lody 15,-</li>
-
-              <li>Frappe z lodami 16,-</li>
-            </ul>
-          </div>
+          <CoffeeSingleMenu title="Desery" dishes={desserts} />
         )}
         {menu == "sand" && (
-          <div className=" flex flex-col col-span-2 justify-self-center sm:col-span-1  sm:col-start-1 mt-48 sm:justify-self-end sm:mr-24  text-white  ">
-            <p className="text-3xl">Kanapki</p>
-
-            <ul className="ml-24 text-xl">
-              <li>Blt 22,-</li>
-              <li>Tuńczyk 25,-</li>
-              <li>Camembert 18,-</li>
-              <li>Parma 20,-</li>
-              <li>Steak 23,-</li>
-            </ul>
-          </div>
+          <CoffeeSingleMenu title="Kanapki" dishes={sandiwches} />
         )}
       </div>
     </div>

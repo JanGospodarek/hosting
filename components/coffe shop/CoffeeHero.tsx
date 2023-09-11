@@ -29,7 +29,7 @@ const CoffeeHero = () => {
           Menu
         </Link>
         <Link
-          to="footer"
+          to="contact"
           smooth={true}
           duration={1500}
           className="btn btn-ghost text-white"

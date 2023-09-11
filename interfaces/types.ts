@@ -16,3 +16,8 @@ export interface Car {
   type: "sport" | "luxury";
 }
 export type Cars = Car[];
+export type Dish = {
+  name: string;
+  price: number;
+};
+export type Dishes = Dish[];

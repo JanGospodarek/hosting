@@ -1,4 +1,3 @@
-import Lottie from "lottie-react";
 import { useRef, useState } from "react";
 import RentalNavbar from "../../components/rental/RentalNavbar";
 import RentalFooter from "../../components/rental/RentalFooter";
@@ -29,7 +28,7 @@ const Contact = () => {
 
       <div className="flex justify-center items-center h-full">
         <div
-          className=" border-2 border-gray-800   w-1/2  mx-auto mt-24 p-8 bg-gray-900"
+          className=" border-2 border-gray-800   w-3/4 lg:w-1/2   mx-auto mt-24 p-8 bg-gray-900"
           id="contact"
         >
           <div className="flex flex-col">
