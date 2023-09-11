@@ -37,7 +37,7 @@ const Contact = () => {
       <div className=" border-x-2 border-x-gray-600 w-3/4 lg:w-1/2  mx-auto  p-8 z-20">
         <div className="flex flex-col">
           <div className="flex flex-col w-full items-center">
-            <h2 className="text-4xl font-semibold mb-4 text-white">
+            <h2 className="text-4xl font-semibold mb-4 text-white text-center">
               Skontaktuj się z nami
             </h2>
             <input
