@@ -17,7 +17,7 @@ const CoffePartners = () => {
         </div>
         <a
           href="tel:+48123123123"
-          className="text-5xl mt-16 text-gray-600 text-center"
+          className="text-5xl mt-16 text-gray-600 text-center whitespace-nowrap"
         >
           +48 123 123 123
         </a>
