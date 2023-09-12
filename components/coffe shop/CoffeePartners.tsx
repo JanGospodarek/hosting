@@ -15,12 +15,14 @@ const CoffePartners = () => {
           <CoffeeSinglePartner alt="Bolt Food" image={Bolt} />
           <CoffeeSinglePartner alt="Glovo" image={Glovo} />
         </div>
-        <a
-          href="tel:+48123123123"
-          className="text-5xl mt-16 text-gray-600 text-center whitespace-nowrap"
-        >
-          +48 123 123 123
-        </a>
+        <div className="tooltip tooltip-open mt-16 " data-tip="Kliknij">
+          <a
+            href="tel:+48123123123"
+            className="text-5xl  text-gray-600 text-center whitespace-nowrap bg-white"
+          >
+            +48 123 123 123
+          </a>
+        </div>
       </div>
     </div>
   );
