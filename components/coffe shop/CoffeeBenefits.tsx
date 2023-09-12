@@ -15,7 +15,9 @@ const CoffeeBenefits = () => {
       </div>
       <div className="md:w-1/3 m-8 text-center">
         <p className="text-3xl mb-2">Przystępne ceny</p>
-        <p className="text-xl">Pilnujemy żeby twój portfel nie ucierpiał</p>
+        <p className="text-xl">
+          Pilnujemy żeby twój portfel nie ucierpiał, a wspomnienia pozostały
+        </p>
       </div>
     </div>
   );

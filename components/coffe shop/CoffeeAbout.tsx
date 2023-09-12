@@ -24,7 +24,9 @@ const CoffeeAbout = () => {
           o zostaniu baristami. Po paru latach dopracowywania całego procesu
           parzenia Twojej ulubionej kawy możesz nacieszyć się najlepszym smakiem
           w Krakowie pochodzącym z ziaren prosto z Kolumbii.
-          <div className="text-gray-400 text-right mt-3">Alicja i Piotr</div>
+          <div className="text-gray-400 text-right mt-3">
+            Alicja i Piotr- właściciele
+          </div>
         </div>
       </div>
     </div>

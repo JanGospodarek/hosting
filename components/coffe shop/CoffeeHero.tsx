@@ -4,7 +4,9 @@ import { Link } from "react-scroll";
 const CoffeeHero = () => {
   return (
     <div className="h-screen w-screen relative overflow-hidden ">
-      <div className="absolute h-full w-full bg-slate-950 bg-opacity-40 top-0 left-0 z-10 text-center flex flex-col justify-center items-center ">
+      <div className="w-full h-full absolute top-0 left-0 z-10 bg-gray-900 bg-opacity-60"></div>
+
+      <div className="absolute h-full w-full  top-0 left-0 z-10 text-center flex flex-col justify-center items-center ">
         <div className="font-tilt z-10 text-white text-5xl sm:text-6xl md:text-8xl p-10">
           KAWIARNIA
         </div>
@@ -24,7 +26,7 @@ const CoffeeHero = () => {
           to="menu"
           smooth={true}
           duration={1500}
-          className="btn btn-ghost text-white"
+          className="btn btn-ghost text-white btn-lg"
         >
           Menu
         </Link>
@@ -32,7 +34,7 @@ const CoffeeHero = () => {
           to="contact"
           smooth={true}
           duration={1500}
-          className="btn btn-ghost text-white"
+          className="btn btn-ghost text-white btn-lg"
         >
           Kontakt
         </Link>
@@ -40,7 +42,7 @@ const CoffeeHero = () => {
           to="about"
           smooth={true}
           duration={1500}
-          className="btn btn-ghost text-white"
+          className="btn btn-ghost text-white btn-lg"
         >
           O nas
         </Link>
