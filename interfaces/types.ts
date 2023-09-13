@@ -20,4 +20,9 @@ export type Dish = {
   name: string;
   price: number;
 };
+export type Opinion = {
+  name: string;
+  opinion: string;
+};
 export type Dishes = Dish[];
+export type Opinions = Opinion[];
