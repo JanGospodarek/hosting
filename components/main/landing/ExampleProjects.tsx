@@ -19,7 +19,7 @@ const ExampleProjects = () => {
             potencjalnym klientom informacji w bardzo prosty i przystępny
             sposób. Witryna może być rozszerzona o takie elementy jak: kolejne
             podstrony, dedykowany system rezerwacji, mapkę z lokalizacją,
-            obsługę motywów przeglądarki
+            obsługę motywów przeglądarki czy obsługę innych języków.
           </p>
           <ul className="list-disc mx-6 ">
             <li>Multi page</li>
@@ -41,8 +41,8 @@ const ExampleProjects = () => {
             Bardzo prosty, przejrzysty interfejs, który jest elegancki i
             praktyczny. Strona idealnie nadaje się dla gastronomii. Witryna może
             być rozszerzona o takie elementy jak: podstrony, mapkę z
-            lokalizacją,obsługę motywów przeglądarki, odnośnik do systemu
-            zamawiania zewnętrznego partnera (Glovo, Pyszne.pl itd.).
+            lokalizacją,obsługę motywów przeglądarki, obsługę innych języków,
+            odnośnik do systemu zamawiania zewnętrznego partnera.
           </p>
           <ul className="list-disc mx-6 ">
             <li>One page</li>
