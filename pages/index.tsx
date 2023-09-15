@@ -12,7 +12,7 @@ const IndexPage = () => (
   <>
     <DefaultSeo
       defaultTitle="Flowbits- Tworzenie stron internetowych"
-      description="Strony WWW od 599zł! Stwórzmy wizytówkę Twojej firmy w internecie. Zajmujemy się projektowaniem i tworzeniem stron internetowych dla nowych i rozwijających się firm. Oferujemy pełną gamę opcji: onepage, multipage, admin panel, obsługa strony... "
+      description="Strony WWW od 999zł! Stwórzmy wizytówkę Twojej firmy w internecie. Zajmujemy się projektowaniem i tworzeniem stron internetowych dla nowych i rozwijających się firm. Oferujemy pełną gamę opcji: onepage, multipage, admin panel, obsługa strony... "
       canonical="https://flowbits.pl/"
     />
     <div className="max-w-[1440px] mx-auto flex flex-col">

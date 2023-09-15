@@ -10,7 +10,7 @@ const Benefits = () => {
       </h2>
       <SingleBenefit
         title="Najniższa cena na rynku"
-        body="Oferujemy realizacje witryn internetowych od A do Z w cenie od 599 zł"
+        body="Oferujemy realizacje witryn internetowych od A do Z w cenie od 999 zł"
         lottieData={PiggyLottie}
         animationWidth="300px"
       />
