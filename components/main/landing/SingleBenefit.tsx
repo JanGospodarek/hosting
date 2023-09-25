@@ -10,7 +10,7 @@ const SingleBenefit = (props: {
   const { title, body, placementClass, lottieData, animationWidth } = props;
   return (
     <div
-      className={`flex sm:mx-16 lg:mx-0 lg:w-1/2  my-4 rounded-xl shadow-2xl text-center p-6 h-auto sm:h-56 ${
+      className={`flex sm:mx-16 lg:mx-0 flex-col md:flex-row lg:w-1/2  my-4 rounded-xl shadow-2xl text-center p-6 h-auto sm:h-56 ${
         placementClass ? placementClass : ""
       }`}
     >
@@ -22,7 +22,7 @@ const SingleBenefit = (props: {
         animationData={lottieData}
         loop={true}
         // style={{ width: animationWidth }}
-        className="mx-auto max-w-1/3 "
+        className="mx-auto w-48"
       />
     </div>
   );

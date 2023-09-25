@@ -13,6 +13,7 @@ const Contact = () => {
   const descRef = useRef<HTMLTextAreaElement | null>(null);
   const [error, setError] = useState<boolean | null>(null);
   const [alert, setAlert] = useState<boolean>(false);
+  const [copied, setCopied] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
 
   const handleSendForm = async () => {
@@ -131,6 +132,36 @@ const Contact = () => {
             <span className="loading loading-spinner"></span>
           )}
         </button>
+
+        <div className="w-full flex items-center flex-col">
+          <div className="relative flex py-5 items-center w-64">
+            <div className="flex-grow border-t-2 border-gray-600"></div>
+            <span className="flex-shrink mx-4 text-gray-600 text-3xl font-semibold ">
+              Lub
+            </span>
+            <div className="flex-grow border-t-2 border-gray-600"></div>
+          </div>
+          <p className=" text-xl flex flex-col items-center">
+            Napisz do nas na:
+            <div
+              className=" font-semibold cursor-pointer flex justify-center items-center"
+              onClick={() => {
+                navigator.clipboard.writeText("kontakt.flowbits@gmail.com");
+                setCopied(true);
+                setTimeout(() => {
+                  setCopied(false);
+                }, 3000);
+              }}
+            >
+              kontakt.flowbits@gmail.com
+              <div
+                className={`badge badge-sm ml-2 ${copied && "badge-success"}`}
+              >
+                {copied ? "skopiowano!" : "skopiuj"}
+              </div>
+            </div>
+          </p>
+        </div>
       </div>
       {alert && (
         <div className={`alert ${error ? "alert-error" : "alert-success"} `}>
