@@ -141,7 +141,7 @@ const Contact = () => {
             </span>
             <div className="flex-grow border-t-2 border-gray-600"></div>
           </div>
-          <p className=" text-xl flex flex-col items-center">
+          <div className=" text-xl flex flex-col items-center">
             Napisz do nas na:
             <div
               className=" font-semibold cursor-pointer flex justify-center items-center"
@@ -160,7 +160,7 @@ const Contact = () => {
                 {copied ? "skopiowano!" : "skopiuj"}
               </div>
             </div>
-          </p>
+          </div>
         </div>
       </div>
       {alert && (

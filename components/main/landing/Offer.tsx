@@ -7,8 +7,7 @@ const Offer = () => {
     <div id="offer" className="offers flex flex-col ">
       <SingleOffer
         image={OnePreview}
-        bgPrimaryColor="#4f46e5" //600
-        bgSecondaryColor="#312e81" //900
+        gradientStr="bg-gradient-to-r from-purple-500 to-blue-500"
         width="200px"
       >
         <h2 className="text-4xl  lg:text-5xl font-bold m-8 text-white">
@@ -27,8 +26,7 @@ const Offer = () => {
       </SingleOffer>
       <SingleOffer
         image={MultiPreview}
-        bgPrimaryColor="#e11d48"
-        bgSecondaryColor="#881337"
+        gradientStr="bg-gradient-to-r from-blue-500 to-[#10b981]"
         width="500px"
       >
         <h2 className="text-4xl lg:text-5xl font-bold m-8 text-white">
@@ -42,15 +40,12 @@ const Offer = () => {
           Witryna zawierająca podstrony pozwoli klientom na lepsze zapoznanie
           się z ofertą Twojego biznesu. Strona spełni swoją rolę zarówno w
           małych jak i duzych firmach. Wiele podstron umożliwia zastosowanie
-          większej ilości elementów, z których korzysta potencjalny klient,
-          takich jak dedykowany system rezerwacji lub dostosowanie danej oferty
-          pod siebie.
+          większej ilości elementów, z których korzysta potencjalny klient.
         </p>
       </SingleOffer>
       <SingleOffer
         image={AdminPreview}
-        bgPrimaryColor="#65a30d"
-        bgSecondaryColor="#365314"
+        gradientStr="bg-gradient-to-r from-[#f43f5e] to-blue-500"
         width="500px"
       >
         <h2 className="text-4xl lg:text-5xl font-bold m-8 text-white">
