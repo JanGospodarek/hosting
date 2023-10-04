@@ -54,13 +54,16 @@ const SingleOffer = ({ gradientStr, image, children, width }: Props) => {
                 Zamów wycenę
               </Link>
             </div>
-            <div className="absolute top-0 right-0 w-1/2 flex justify-center items-center h-full p-4">
-              <Image
-                src={image}
-                alt="tedst"
-                style={{ width }}
-                className="  z-10 shadow-lg shadow-slate-950"
-              />
+            <div className="absolute top-0 right-0 w-1/2 flex justify-center items-center h-full p-4 ">
+              <Fade delay={300}>
+                <Image
+                  src={image}
+                  alt="tedst"
+                  style={{ width }}
+                  className="  z-10 shadow-lg shadow-slate-950"
+                  quality={40}
+                />
+              </Fade>
             </div>
           </div>
         </div>

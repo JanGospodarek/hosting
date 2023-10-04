@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "../../../public/img/logo2.png";
 import { useScroll } from "../../hooks/useScroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const { scrollDirection } = useScroll();
@@ -30,15 +31,33 @@ const Navbar = () => {
           className="w-[180px] absolute mx-auto mb-2 left-0 right-0"
         />
         <div className=" justify-end gap-4 hidden lg:flex">
-          <button className="btn btn-sm btn-outline btn-primary m-2">
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-sm btn-outline btn-primary m-2"
+          >
             Kontakt
-          </button>
-          <button className="btn btn-sm btn-outline btn-primary m-2">
+          </Link>
+          <Link
+            to="offer"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-sm btn-outline btn-primary m-2"
+          >
             Oferta
-          </button>
-          <button className="btn btn-sm btn-outline btn-primary m-2">
+          </Link>
+          <Link
+            to="example_projects"
+            smooth={true}
+            offset={-100}
+            duration={1500}
+            className="btn btn-sm btn-outline btn-primary m-2"
+          >
             Projekty
-          </button>
+          </Link>
         </div>
         <div className="dropdown dropdown-end absolute top-0 right-0 lg:hidden">
           <label tabIndex={0} className="btn btn-square btn-outline m-1">
@@ -57,19 +76,37 @@ const Navbar = () => {
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box "
           >
             <li>
-              <button className="btn btn-sm btn-outline btn-primary m-2 w-20">
+              <Link
+                to="contact"
+                smooth={true}
+                offset={-100}
+                duration={1500}
+                className="btn btn-sm btn-outline btn-primary m-2"
+              >
                 Kontakt
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="btn btn-sm btn-outline btn-primary m-2 w-20">
+              <Link
+                to="offer"
+                smooth={true}
+                offset={-100}
+                duration={1500}
+                className="btn btn-sm btn-outline btn-primary m-2"
+              >
                 Oferta
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="btn btn-sm btn-outline btn-primary m-2 w-20">
+              <Link
+                to="example_projects"
+                smooth={true}
+                offset={-100}
+                duration={1500}
+                className="btn btn-sm btn-outline btn-primary m-2"
+              >
                 Projekty
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
