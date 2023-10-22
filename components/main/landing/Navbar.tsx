@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="w-full h-20 p-4 rounded-lg shadow-lg fixed top-0 right-0 bg-white z-40 flex justify-center "
+      className="w-full  lg:w-1/3  h-20 p-4 rounded-lg shadow-lg fixed top-0 right-0 bg-white z-40 flex justify-center lg:hidden"
       // @ts-expect-error
       style={scrollDirection === "down" ? styles.active : styles.hidden}
     >
@@ -28,9 +28,9 @@ const Navbar = () => {
         <Image
           src={Logo}
           alt="logo"
-          className="w-[180px] absolute mx-auto mb-2 left-0 right-0"
+          className="w-[180px] absolute mx-auto mb-2 left-0 right-0 lg:hidden"
         />
-        <div className=" justify-end gap-4 hidden lg:flex">
+        <div className="justify-end  hidden lg:flex md:justify-center">
           <Link
             to="contact"
             smooth={true}

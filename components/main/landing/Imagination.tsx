@@ -37,15 +37,6 @@ const Imagination = () => {
         <h3 className="text-2xl mt-2 text-slate-600">
           A my przeniesiemy ją do internetu
         </h3>
-        <Link
-          to="example_projects"
-          smooth={true}
-          offset={-100}
-          duration={1500}
-          className="btn btn-outline mt-4 btn-lg"
-        >
-          Projekty
-        </Link>
       </div>
       <Lottie
         animationData={ImaginationLottie}

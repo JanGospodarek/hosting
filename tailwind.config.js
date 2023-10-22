@@ -14,6 +14,12 @@ module.exports = withMT({
         rental: ["Kanit", "sans-serif"],
         rentalCursive: ["Kanit", "sans-serif"],
       },
+      dropShadow: {
+        glow: [
+          "0 0px 5px rgba(255,255, 255, 0.6)",
+          "0 0px 40px rgba(255, 255,255, 0.4)",
+        ],
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
