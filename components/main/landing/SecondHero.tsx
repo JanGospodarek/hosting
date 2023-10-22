@@ -13,7 +13,7 @@ const SecondHero = () => {
           smooth={true}
           offset={-100}
           duration={1500}
-          className="btn btn-outline btn-secondary m-4 btn-lg"
+          className="btn btn-outline btn-secondary m-2 btn-lg"
         >
           Zaczynamy!
         </Link>
