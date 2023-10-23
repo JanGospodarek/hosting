@@ -9,10 +9,10 @@ const SecondHero = () => {
         </p>
         <p className="text-gray-100 text-4xl mx-2">z naszą pomocą</p>
         <Link
-          to="offer"
+          to="timeline"
           smooth={true}
-          offset={-100}
-          duration={1500}
+          // offset={}
+          duration={1000}
           className="btn btn-outline btn-secondary m-2 btn-lg"
         >
           Zaczynamy!

@@ -9,6 +9,7 @@ import Offer from "../components/main/landing/Offer";
 import SecondHero from "../components/main/landing/SecondHero";
 import Technologies from "../components/main/landing/Technologies";
 import { DefaultSeo } from "next-seo";
+import Timeline from "../components/main/landing/Timeline";
 
 const IndexPage = () => (
   <>
@@ -21,7 +22,7 @@ const IndexPage = () => (
       <Navbar />
       <Hero />
       <SecondHero />
-
+      <Timeline />
       <Offer />
       <Benefits />
       <Technologies />

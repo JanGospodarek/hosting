@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="w-full    h-20 p-4 rounded-lg shadow-lg fixed top-0 right-0 bg-white z-40 flex justify-center "
+      className="w-full    h-20 p-4 rounded-lg shadow-lg fixed top-0 right-0 bg-white z-40 flex justify-center hidden "
       // @ts-expect-error
       style={scrollDirection === "down" ? styles.active : styles.hidden}
     >
