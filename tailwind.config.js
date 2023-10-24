@@ -20,6 +20,9 @@ module.exports = withMT({
           "0 0px 40px rgba(255, 255,255, 0.4)",
         ],
       },
+      backgroundImage: {
+        "timeline-bg": "url('/img/tlo.png')",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],

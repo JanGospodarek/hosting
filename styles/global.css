@@ -5,6 +5,8 @@
 
 :root {
   color-scheme: only light;
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
 }
 * {
   margin: 0;
@@ -25,8 +27,8 @@
   opacity: 0.5;
   width: 400px;
   aspect-ratio: 1/1;
-  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
-    alternate forwards;
+  animation: animate 8s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate
+    forwards;
   filter: blur(40px);
   z-index: -1;
   background: linear-gradient(
@@ -166,4 +168,73 @@
 /* setting dot to the right if the card is odd */
 .card:nth-child(even) > .info > .title::before {
   right: -45px;
+}
+/* Neon btn */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.neon-button {
+  /* font-size: 4rem; */
+
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
 }
