@@ -10,17 +10,21 @@ const TimelineStep = (props: Props) => {
   const { title, body, right, nextStep, id } = props;
   return (
     <div className="card " id={id}>
-      <div className={`info flex flex-col ${right && "items-end"}`}>
-        <h3 className="title  text-4xl sm:text-6xl pt-36 text-white">
+      <div
+        className={`info flex flex-col text-center sm:text-left ${
+          right && "sm:items-end sm:text-right"
+        }`}
+      >
+        <h3 className="title text-6xl  pt-36 text-center sm:text-left text-white">
           {title}
         </h3>
-        <p className=" w-96 p-4 text-gray-400 text-lg sm:text-xl">{body}</p>
+        <p className=" w-96 py-4 text-gray-400 text-lg sm:text-xl">{body}</p>
         {nextStep ? (
           <Link
             to={nextStep}
             smooth={true}
             duration={1000}
-            className="btn btn-secondary btn-circle btn-outline mb-36 mx-auto "
+            className="btn btn-primary btn-circle btn-outline mb-36 mx-auto sm:mx-4 z-30"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +41,7 @@ const TimelineStep = (props: Props) => {
           <Link
             to="contact"
             smooth={true}
-            duration={1000}
+            duration={1500}
             className="neon-button text-2xl mx-auto mt-8 mb-16 "
           >
             Kontakt

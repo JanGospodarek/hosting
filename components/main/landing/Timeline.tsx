@@ -4,7 +4,8 @@ import TimelineStep from "./TimelineStep";
 const Timeline = () => {
   return (
     // bg-[#1b2025]
-    <div className="w-screen  bg-[url('/img/tlo.png')]" id="timeline">
+    // bg-[url('/img/tlo.png')]
+    <div className="w-screen   bg-[url('/img/tlo.png')]" id="timeline">
       <div className="timeline scale-[88%] sm:scale-100">
         <div className="outer">
           <TimelineStep
