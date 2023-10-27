@@ -18,7 +18,9 @@ const TimelineStep = (props: Props) => {
         <h3 className="title text-6xl  pt-36 text-center sm:text-left text-white">
           {title}
         </h3>
-        <p className=" w-96 py-4 text-gray-400 text-lg sm:text-xl">{body}</p>
+        <p className=" w-96 sm:w-[500px] py-4 text-gray-400 text-lg sm:text-xl">
+          {body}
+        </p>
         {nextStep ? (
           <Link
             to={nextStep}
