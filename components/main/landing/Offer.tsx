@@ -58,7 +58,7 @@ const Offer = () => {
           Panel administratora stworzony specjalnie dla Twojej strony
           internetowej pozwoli Ci na własnoręczną edycje np. produktów czy menu
           restauracji. Zapewni Ci to większą swobodę i szybkość w zmianie oferty
-          znajdującej się na stronie. Możliwe jest takze powierzenie obslugi
+          znajdującej się na stronie. Możliwe jest także powierzenie obsługi
           Twojej witryny naszemu zespołowi.
         </p>
       </SingleOffer>
