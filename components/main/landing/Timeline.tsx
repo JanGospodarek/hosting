@@ -5,8 +5,8 @@ const Timeline = () => {
   return (
     // bg-[#1b2025]
     // bg-[url('/img/tlo.png')]
-    <div className="w-screen   bg-[url('/img/tlo.png')]" id="timeline">
-      <div className="timeline scale-[88%] sm:scale-100">
+    <div className="w-full   bg-[url('/img/tlo.png')]" id="timeline">
+      <div className="timeline scale-[92%] sm:scale-100">
         <div className="outer">
           <TimelineStep
             title="Skontaktuj się z nami"

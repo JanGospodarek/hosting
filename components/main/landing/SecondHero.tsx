@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 const SecondHero = () => {
   return (
-    <div className="blob-container w-screen h-screen">
+    <div className="blob-container w-full h-screen">
       <div className="flex flex-col items-start sm:items-center ">
         <p className="text-white text-6xl font-semibold sm:text-center drop-shadow-glow m-2 ">
           Przenieś swój biznes do internetu
