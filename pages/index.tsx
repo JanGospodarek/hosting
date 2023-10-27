@@ -6,8 +6,10 @@ import Hero from "../components/main/landing/Hero";
 import Imagination from "../components/main/landing/Imagination";
 import Navbar from "../components/main/landing/Navbar";
 import Offer from "../components/main/landing/Offer";
+import SecondHero from "../components/main/landing/SecondHero";
 import Technologies from "../components/main/landing/Technologies";
 import { DefaultSeo } from "next-seo";
+import Timeline from "../components/main/landing/Timeline";
 
 const IndexPage = () => (
   <>
@@ -19,10 +21,13 @@ const IndexPage = () => (
     <div className="max-w-[1440px] mx-auto flex flex-col">
       <Navbar />
       <Hero />
+      <SecondHero />
+      <Timeline />
       <Offer />
-      <Imagination />
       <Benefits />
       <Technologies />
+      <Imagination />
+
       <ExampleProjects />
       <Contact />
       <Footer />
