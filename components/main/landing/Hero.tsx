@@ -58,30 +58,31 @@ const Hero = () => {
           alt="logo"
           className="w-[500px] lg:w-[600px] xl:w-[700px] z-0"
         />
-        <div className="mt-4   text-center z-30 ">
+        <div className="mt-4 text-center z-30 flex flex-col">
           <h1 className="text-2xl ">
             Razem stwórzmy przyszłość
             <span className="font-bold"> Twojej</span> firmy w internecie
           </h1>
-
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-100}
-            duration={1500}
-            className="btn btn-lg btn-outline btn-primary mt-6 z-30"
-          >
-            Kontakt
-          </Link>
-          <Link
-            to="offer"
-            smooth={true}
-            offset={-100}
-            duration={1500}
-            className="btn btn-lg btn-outline btn-primary mt-6 ml-8 z-30"
-          >
-            Oferta
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center">
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-100}
+              duration={1500}
+              className="btn btn-lg btn-outline btn-primary mt-6  mx-auto"
+            >
+              Kontakt
+            </Link>
+            <Link
+              to="offer"
+              smooth={true}
+              offset={-100}
+              duration={1500}
+              className="btn btn-lg btn-outline btn-primary mt-6 mx-auto"
+            >
+              Oferta
+            </Link>
+          </div>
         </div>
       </div>
     </div>
